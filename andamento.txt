@@ -1,0 +1,28 @@
+MERN REACT
+19-03 -> 01:20 - 01:53:00
+
+-inicio documentação
+-trabalho com estilização dos componentes:
+--backdrop
+--navbar
+--sidedrawer
+--product
+---responsividade
+-ajusto lógica do hamburguer
+-inicio a homescreen
+
+======================================================
+20/03 -> 01:53 - 02:08
+
+finalizado ProductScreen
+
+======================================================
+22/03 -> 02:08 - 
+
+-cartItem e estilização completa
+-cartScreen e estilização 
+
+ainda falta
+-falta ajustar para sumir o hamburguer button quando maximizada a tela
+-ajustar a tela do carrinho (cartscreen)
+-inserir o redux e lógica de movimentação de produtos na loja;
