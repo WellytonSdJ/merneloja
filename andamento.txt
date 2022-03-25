@@ -15,9 +15,10 @@ MERN REACT
 20/03 -> 01:53 - 02:08
 
 finalizado ProductScreen
+problemas para visualizar o produto
 
 ======================================================
-22/03 -> 02:08 - 
+22/03 -> 01:30;
 
 -cartItem e estilização completa
 -cartScreen e estilização 
@@ -26,3 +27,21 @@ ainda falta
 -falta ajustar para sumir o hamburguer button quando maximizada a tela
 -ajustar a tela do carrinho (cartscreen)
 -inserir o redux e lógica de movimentação de produtos na loja;
+======================================================
+23/03 -> 21:34:00 - 
+iniciado implantação do redux
+
+-criado pastas constans, reducers e actions e arquivo store;
+-configurado o store; // adicionado criação incial do redux
+-adicionado no index o store e provider
+-consfigurado constants
+-configurado cart reducers;
+-configurado cartactions;
+
+======================================================
+24/03 -> 22:00 - 23:29
+02:30 - 02:58
+
+-arrumado redux inicial;
+-finalizado cartReducers;
+-iniciado productReducers;
