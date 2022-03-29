@@ -6,9 +6,11 @@ function Navbar({ click }) {
   return (
     <nav className="navbar">
       {/* logo */}
+      <Link to="/">
       <div className="navbar__logo">
         <h2>MERN E-Loja</h2>
       </div>
+      </Link>
       {/* links */}
       <ul className="navbar__links">
         <li>
@@ -25,6 +27,12 @@ function Navbar({ click }) {
             Loja
           </Link>
         </li>
+        <li>
+          <Link to="/teste">
+            Teste
+          </Link>
+        </li>
+
       </ul>
       <div className="hamburger__menu" onClick={ click }>
         <div></div>

@@ -26,6 +26,7 @@ Mas escolhi essa forma de arquitetura para centralizar todos códigos dentro de 
 
 ### Antes de baixar instalar o projeto, é necessário ter o **GIT** e **NODEJS** previamente instalados em sua máquina!
 
+## Instalação
 No terminal vá para a pasta onde será instalado o projeto e  execute o comando: 
 
 `git clone https://github.com/WellytonSdJ/merneloja.git`
@@ -44,22 +45,16 @@ e instale as dependencias com o comando:
 
 `npm install`
 
-depois volte à pasta anterior e instale as dependencias do backend: 
-
-`cd ..`
-
-`cd /backend`
-
-`npm intall`
-
 e retorne à pasta raiz para executar o Projeto
 
 `cd ..`
 
+## Execução
 Uma vez instaladas todas dependencias, *NA PASTA RAIZ*, execute o comando: 
 `npm run dev` - para rodar o projeto e suas integrações do front e backend ao mesmo tempo.
 
 
+# PROBLEMAS ENCONTRADOS
 
-
-
+- durante a conexão do backend e frontend -> solução: fiz uma liberação de proxy no package.json do lado frontend para liberar a porta 5000 e ela ter acesso. 
+- Outro ponto importante é que eu havia esquecido de validar se as rotas estavam funcionando. Testei e precisei fazer uns ajustes e por fim validei que estava certo.

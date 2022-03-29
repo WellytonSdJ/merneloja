@@ -45,3 +45,22 @@ iniciado implantação do redux
 -arrumado redux inicial;
 -finalizado cartReducers;
 -iniciado productReducers;
+
+======================================================
+25/03 -> 19:50 - 
+
+homescreen integrada ao backend
+
+PENDENTES: 
+-desabilitar botão hamburguer quando resolução estiver completa OK
+-ajuste no item do carrinho OK
+-acessar a rota product OK
+-ajustar rota do product:id ( está no arquivo APP.JS) OK
+======================================================
+03:15 -> começa a integrar o product screen
+1:54 -- começa a customizar o productScreen
+01:36 - começa a ajustar o product
+
+======================================================
+-consegui recuperar o id na rota do productScreen -> product
+--faltou: ajustar getProductDetails que não está funcionando

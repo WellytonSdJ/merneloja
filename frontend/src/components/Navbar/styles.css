@@ -70,11 +70,12 @@
 .hamburger__menu {
   width: 30px;
   height: 30px;
-  display: flex;
+  display: none; 
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  /* visibility: hidden; faz ficar invisivel enquanto estiver com a tela grnde */
 }
 
 .hamburger__menu > div {
@@ -94,6 +95,7 @@
   }
   .hamburger__menu {
     display: flex;
+    /* visibility: visible; */
   }
 }
 
