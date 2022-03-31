@@ -19,20 +19,16 @@ function ProductScreen( ) {
     }
   }
 
+  const addToCartHandle = () => {
+    // criar lógica do carrinho aqui
+  }
+
   useEffect(()=>{
     productDetails(id)
   },[])
 
 
   return (
-    /*
-    _id,
-     countInStock
-     price
-     description
-     imageUrl
-     name
-     */
     <div className="productscreen">
       <div className="productscreen__left">
         <div className="left__image">
@@ -50,20 +46,28 @@ function ProductScreen( ) {
             Preço: <span>$499.99</span>
           </p>
           <p>
-            Status: Em estoque
+            Status: 
+            <span>{product.countInStock > 0 ? "Em estoque" : "Sem estoque no momento"}</span>
+            Em estoque
           </p>
           <p>
             Quantidade:
-            <select>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
+            {/* <button className="btn-qtd" onClick={(e) =>{setQty(qty + 1)}}>+</button>
+            {qty}
+            <button className="btn-qtd" onClick={(e) =>{ qty === 0 ? setQty( 0 ) : setQty( qty - 1 ) }}>-</button> */}
+            <select value={qty} onChange={(e) =>{ setQty(e.target.value)}}>
+              {
+                [...Array(product.countInStock)
+                .keys()]
+                .map(( x ) =>
+                  (<option key={x+1} value={x+1}>
+                    {x+1}
+                  </option>)
+                )}
             </select>
           </p>
           <p>
-            <button type="button">Adicionar ao Carrinho</button>
+            <button type="button" onClick={ addToCartHandle } >Adicionar ao Carrinho</button>
           </p>
         </div>
       </div>

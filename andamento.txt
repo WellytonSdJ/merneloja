@@ -66,5 +66,8 @@ PENDENTES:
 --faltou: ajustar getProductDetails que não está funcionando
 ======================================================
 30/03 - 20:00
---listar produtos na homescreen OK
---puxar dados de um produto específico na productScreen OK
+-listar produtos na homescreen OK
+-puxar dados de um produto específico na productScreen OK
+-criada lógica da Quantidade ok
+--faltou criar lógica do carrinho
+quitei em 03:24
