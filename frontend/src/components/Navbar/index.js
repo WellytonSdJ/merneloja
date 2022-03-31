@@ -27,12 +27,7 @@ function Navbar({ click }) {
             Loja
           </Link>
         </li>
-        <li>
-          <Link to="/teste">
-            Teste
-          </Link>
-        </li>
-
+       
       </ul>
       <div className="hamburger__menu" onClick={ click }>
         <div></div>

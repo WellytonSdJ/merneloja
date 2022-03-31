@@ -56,5 +56,6 @@ Uma vez instaladas todas dependencias, *NA PASTA RAIZ*, execute o comando:
 
 # PROBLEMAS ENCONTRADOS
 
-- durante a conexão do backend e frontend -> solução: fiz uma liberação de proxy no package.json do lado frontend para liberar a porta 5000 e ela ter acesso. 
+- durante a conexão do backend e frontend -> solução: instalei e configurei no backend o setupProxy
 - Outro ponto importante é que eu havia esquecido de validar se as rotas estavam funcionando. Testei e precisei fazer uns ajustes e por fim validei que estava certo.
+
