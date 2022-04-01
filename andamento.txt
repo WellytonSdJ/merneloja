@@ -69,5 +69,15 @@ PENDENTES:
 -listar produtos na homescreen OK
 -puxar dados de um produto específico na productScreen OK
 -criada lógica da Quantidade ok
---faltou criar lógica do carrinho
+--faltou criar lógica do 'adicionar ao carrinho'
 quitei em 03:24
+======================================================
+31/03 - 23:33
+-lógica do 'adicionar ao carrinho' OK
+-renderizar no cardscreen OK
+
+--faltou 
+--criar lógica de quantidade do cardscreen
+--criar logica do botao excluir item no cardscreen
+--criar logica do prosseguir compra
+--criar rota de put para diminuir quantidade no banco de dados (usar com o prosseguir compra)
