@@ -2,10 +2,17 @@ import './styles.css';
 import { Link } from 'react-router-dom'
 
 function CartItem({ item, handleCartState }) {
-
   const handleRemoveItem = () => {
     localStorage.removeItem(JSON.stringify(item.product));
-    handleCartState()
+    handleCartState() // atualiza o carrinho
+  }
+
+  const handleQty = (e) => {
+    const qt = parseInt(e.target.value) // pega o valor e converte para um inteiro
+    const newQty = {...item, qty: qt} // está certo, só preciso pegar a quantidade variável
+    localStorage.setItem(JSON.stringify(item.product), JSON.stringify(newQty))
+    console.log('newQty', newQty)
+    handleCartState() // atualiza o carrinho
   }
 
   return ( 
@@ -20,7 +27,7 @@ function CartItem({ item, handleCartState }) {
 
     <p className="cartitem__price">${item.price}</p>
     
-    <select className="cartitem__select" value={item.qty} onChange={() => console.Console('alguma coisa')}>
+    <select className="cartitem__select" value={item.qty} onChange={handleQty}>
       {
         [...Array(item.countInStock).keys()].map( x =>(
           <option key={x+1} value={x+1}>{x+1}</option>

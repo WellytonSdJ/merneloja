@@ -83,10 +83,12 @@ quitei em 03:24
 --criar rota de put para diminuir quantidade no banco de dados (usar com o prosseguir compra)
 ======================================================
 21/04
---criar lógica de quantidade do cardscreen
+
+-botão excluir remove item completo
+-botao quantidade completo
+
+--criar lógica de quantidade do cardscreen ok
 --criar logica do botao excluir item no cardscreen OK
 --criar logica do prosseguir compra
 --criar rota de put para diminuir quantidade no banco de dados (usar com o prosseguir compra)
-
--botão excluir remove item completo
--botao quantidade
+--quantidade de items e valor interativos
