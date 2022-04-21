@@ -1,10 +1,12 @@
-import React from 'react';
 import './styles.css';
 import { Link } from 'react-router-dom'
 
-function CartItem({ item }) {
-  console.log('item name->', item.name)
+function CartItem({ item, handleCartState }) {
 
+  const handleRemoveItem = () => {
+    localStorage.removeItem(JSON.stringify(item.product));
+    handleCartState()
+  }
 
   return ( 
   <div className="cartitem">
@@ -26,7 +28,7 @@ function CartItem({ item }) {
       }
     </select>
 
-    <button className="cartitem__deleteBtn">
+    <button className="cartitem__deleteBtn" onClick={handleRemoveItem}>
       <i className="fas fa-trash"></i>
     </button>
     

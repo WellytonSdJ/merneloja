@@ -33,9 +33,9 @@ function ProductScreen() {
         countInStock: data.countInStock,
         qty
       }
-      console.log('payload ->', payload)
+      // console.log('payload ->', payload)
       //salva os items no localStorage - separando cada produto por id
-      localStorage.setItem('cartItem ' + JSON.stringify(id.id), JSON.stringify(payload))
+      localStorage.setItem(JSON.stringify(id.id), JSON.stringify(payload))
       // redireciona pra página do carrinho
       navigate('/cart')
     } catch (error) {

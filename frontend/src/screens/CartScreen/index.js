@@ -9,7 +9,7 @@ function CartScreen() {
   const [cart, setCart] = useState([])
 
   const handleCartState = () => { // valida os items adicionados no localStorage do usuários e envia pro state 'cart'
-    const cartItemsLocalStorage = Object.values(localStorage); //pega os valores do    
+    const cartItemsLocalStorage = Object.values(localStorage); //pega os valores do storage
     const newItem = cartItemsLocalStorage.map(item => JSON.parse(item)) // ajusta para poder ler como json novamente
     setCart(newItem)
   }
@@ -29,7 +29,7 @@ function CartScreen() {
             </div>
           ) : (
             cart.map(item =>              
-              (<CartItem item={item}/>              
+              (<CartItem item={item} handleCartState={handleCartState} key={item.product}/>              
             ))
           )
         }
