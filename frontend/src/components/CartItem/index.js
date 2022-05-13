@@ -11,7 +11,7 @@ function CartItem({ item, handleCartState }) {
     const qt = parseInt(e.target.value) // pega o valor e converte para um inteiro
     const newQty = {...item, qty: qt} // está certo, só preciso pegar a quantidade variável
     localStorage.setItem(JSON.stringify(item.product), JSON.stringify(newQty))
-    console.log('newQty', newQty)
+    // console.log('newQty', newQty)
     handleCartState() // atualiza o carrinho
   }
 
@@ -25,7 +25,7 @@ function CartItem({ item, handleCartState }) {
       <p>{item.name}</p>
     </Link>
 
-    <p className="cartitem__price">${item.price}</p>
+    <p className="cartitem__price">${item.price.toFixed(2)}</p>
     
     <select className="cartitem__select" value={item.qty} onChange={handleQty}>
       {

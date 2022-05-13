@@ -92,3 +92,6 @@ quitei em 03:24
 --criar logica do prosseguir compra
 --criar rota de put para diminuir quantidade no banco de dados (usar com o prosseguir compra)
 --quantidade de items e valor interativos
+======================================================
+12/05
+--quantidade de items e valor interativos OK

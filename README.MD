@@ -15,7 +15,7 @@ Entre as técnologias escolhidas está primariamente a Stack MERN, mas foram adi
  
  - [Node JS](https://nodejs.org/en/docs/) - onde foi criada toda API de comunicação e controle do banco de dados.
  
- - [Redux](https://redux.js.org) - para deixar de forma global as variáveis e facilitar seu reuso.
+ <!-- - [Redux](https://redux.js.org) - para deixar de forma global as variáveis e facilitar seu reuso. -->
 
 ## Instalação e execução do projeto
 
